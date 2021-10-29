@@ -1,0 +1,33 @@
+stages:
+  - build
+  - push
+  - run
+  - clean
+
+# 编译
+build:
+  stage: build
+  script:
+  - /usr/local/maven/apache-maven-3.5.3/bin/mvn clean package
+  - cp target/itoken-service-admin-1.0.0-SNAPSHOT.jar docker
+  - cd docker
+  - docker build -t 127.0.0.1:5000/itoken-service-admin .
+
+# 部署到服务器
+push:
+  stage: push
+  script:
+  - docker push 127.0.0.1:5000/itoken-service-admin
+
+# 运行
+run:
+  stage: run
+  script:
+  - cd docker
+  - docker-compose down
+  - docker-compose up -d
+
+clean:
+  stage: clean
+  script:
+  - docker rmi $(docker images -q -f dangling=true)

@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+  itoken-service-admin:
+    restart: always
+    container_name: itoken-service-admin
+    image: 127.0.0.1:5000/itoken-service-admin
+    ports:
+      - 8501:8501
+    networks:
+    - service-admin-network
+
+networks:
+  service-admin-network:
