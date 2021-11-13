@@ -20,5 +20,8 @@
         <module>itoken-zuul</module>
         <module>itoken-service-admin</module>
         <module>itoken-service-redis</module>
+        <module>itoken-web-admin</module>
+        <module>itoken-common</module>
+        <module>itoken-common-service</module>
     </modules>
 </project>

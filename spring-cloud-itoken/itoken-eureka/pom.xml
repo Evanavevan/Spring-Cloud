@@ -16,10 +16,6 @@
 
     <name>itoken-eureka</name>
 
-    <properties>
-        <spring-boot-admin-starter-client.version>2.1.4</spring-boot-admin-starter-client.version>
-    </properties>
-
     <dependencies>
         <!-- Spring Boot Begin -->
         <dependency>
@@ -52,7 +48,6 @@
         <dependency>
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-starter-client</artifactId>
-            <version>${spring-boot-admin-starter-client.version}</version>
         </dependency>
         <!-- Spring Boot Admin End -->
     </dependencies>

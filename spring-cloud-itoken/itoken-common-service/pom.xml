@@ -2,38 +2,32 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-
     <parent>
-        <groupId>com.evan</groupId>
         <artifactId>itoken-dependencies</artifactId>
+        <groupId>com.evan</groupId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../itoken-dependencies/pom.xml</relativePath>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>itoken-config</artifactId>
+    <artifactId>itoken-common-service</artifactId>
     <packaging>jar</packaging>
 
-    <name>itoken-config</name>
+    <name>itoken-common-service</name>
 
     <dependencies>
         <!-- Spring Boot Begin -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
         </dependency>
         <!-- Spring Boot End -->
 
@@ -44,7 +38,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -62,19 +56,21 @@
             <artifactId>spring-boot-admin-starter-client</artifactId>
         </dependency>
         <!-- Spring Boot Admin End -->
+
+        <!-- Database Begin -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- Database End -->
+
+        <!-- Environment Begin -->
+        <dependency>
+            <groupId>com.evan</groupId>
+            <artifactId>itoken-common</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <!-- Environment End -->
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.evan.itoken.config.ConfigApplication</mainClass>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-
-
 </project>

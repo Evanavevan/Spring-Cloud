@@ -16,11 +16,6 @@
 
     <name>itoken-zipkin</name>
 
-    <properties>
-        <spring-boot-admin-starter-client.version>2.1.4</spring-boot-admin-starter-client.version>
-        <zipkin.version>2.10.1</zipkin.version>
-    </properties>
-
     <dependencies>
         <!-- Spring Boot Begin -->
         <dependency>
@@ -65,7 +60,6 @@
         <dependency>
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-starter-client</artifactId>
-            <version>${spring-boot-admin-starter-client.version}</version>
         </dependency>
         <!-- Spring Boot Admin End -->
 
@@ -73,12 +67,10 @@
         <dependency>
             <groupId>io.zipkin.java</groupId>
             <artifactId>zipkin</artifactId>
-            <version>${zipkin.version}</version>
         </dependency>
         <dependency>
             <groupId>io.zipkin.java</groupId>
             <artifactId>zipkin-server</artifactId>
-            <version>${zipkin.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.springframework.boot</groupId>
@@ -89,7 +81,6 @@
         <dependency>
             <groupId>io.zipkin.java</groupId>
             <artifactId>zipkin-autoconfigure-ui</artifactId>
-            <version>${zipkin.version}</version>
         </dependency>
         <!-- ZipKin End -->
     </dependencies>
