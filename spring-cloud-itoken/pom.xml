@@ -23,5 +23,6 @@
         <module>itoken-web-admin</module>
         <module>itoken-common</module>
         <module>itoken-common-service</module>
+        <module>itoken-common-web</module>
     </modules>
 </project>

@@ -14,4 +14,24 @@
     <packaging>jar</packaging>
 
     <name>itoken-web-admin</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.evan</groupId>
+            <artifactId>itoken-common-web</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.evan.itoken.web.admin.WebAdminApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

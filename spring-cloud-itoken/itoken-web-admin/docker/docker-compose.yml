@@ -5,7 +5,7 @@ services:
     container_name: itoken-web-admin
     image: 127.0.0.1:5000/itoken-web-admin
     ports:
-      - 8501:8501
+      - 8601:8601
     networks:
     - web-admin-network
 
