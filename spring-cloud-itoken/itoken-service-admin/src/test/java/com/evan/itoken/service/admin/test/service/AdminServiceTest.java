@@ -1,7 +1,7 @@
 package com.evan.itoken.service.admin.test.service;
 
 import com.evan.itoken.service.admin.ServiceAdminApplication;
-import com.evan.itoken.service.admin.domain.TbSysUser;
+import com.evan.itoken.common.domain.TbSysUser;
 import com.evan.itoken.service.admin.service.AdminService;
 import org.junit.Assert;
 import org.junit.Test;

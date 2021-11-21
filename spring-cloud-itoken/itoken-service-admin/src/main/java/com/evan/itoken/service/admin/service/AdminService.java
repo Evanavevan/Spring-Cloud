@@ -1,6 +1,6 @@
 package com.evan.itoken.service.admin.service;
 
-import com.evan.itoken.service.admin.domain.TbSysUser;
+import com.evan.itoken.common.domain.TbSysUser;
 
 public interface AdminService {
     /**

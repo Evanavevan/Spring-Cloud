@@ -14,7 +14,7 @@ public class RedisController {
     @Autowired
     private RedisService redisService;
 
-    @RequestMapping(value = "put", method = RequestMethod.GET)
+    @RequestMapping(value = "put", method = RequestMethod.POST)
     public String set(String key, String value, long seconds) {
         redisService.set(key, value, seconds);
         return RESULT_OK;

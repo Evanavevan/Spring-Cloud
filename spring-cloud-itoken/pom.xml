@@ -24,5 +24,7 @@
         <module>itoken-common</module>
         <module>itoken-common-service</module>
         <module>itoken-common-web</module>
+        <module>itoken-service-sso</module>
+        <module>itoken-common-domain</module>
     </modules>
 </project>

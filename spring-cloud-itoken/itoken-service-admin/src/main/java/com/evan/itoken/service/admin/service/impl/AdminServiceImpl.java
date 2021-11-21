@@ -1,6 +1,6 @@
 package com.evan.itoken.service.admin.service.impl;
 
-import com.evan.itoken.service.admin.domain.TbSysUser;
+import com.evan.itoken.common.domain.TbSysUser;
 import com.evan.itoken.service.admin.mapper.TbSysUserMapper;
 import com.evan.itoken.service.admin.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;

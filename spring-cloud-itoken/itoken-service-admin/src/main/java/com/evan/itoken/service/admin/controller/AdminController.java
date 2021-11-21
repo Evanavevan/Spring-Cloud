@@ -1,7 +1,7 @@
 package com.evan.itoken.service.admin.controller;
 
+import com.evan.itoken.common.domain.TbSysUser;
 import com.evan.itoken.common.dto.BaseResult;
-import com.evan.itoken.service.admin.domain.TbSysUser;
 import com.evan.itoken.service.admin.service.AdminService;
 import com.google.common.collect.Lists;
 import org.apache.commons.lang.StringUtils;
@@ -9,8 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 public class AdminController {
